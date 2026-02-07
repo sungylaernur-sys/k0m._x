@@ -1,0 +1,32 @@
+"use client";
+
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <div className="page">
+      <div className="card">
+        <h1>K0m._X</h1>
+        <h2>Математика ойындары</h2>
+
+        <Link href="/arkan">
+          <button className="button red">
+            жылдамдықпен есептеу
+          </button>
+        </Link>
+
+        <Link href="/game">
+          <button className="button green">
+            Тірекке өрмелеу
+          </button>
+        </Link>
+
+        <Link href="/kap">
+          <button className="button pink">
+            Қаппен жарыс
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+}
